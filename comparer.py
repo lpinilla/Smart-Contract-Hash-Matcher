@@ -25,11 +25,8 @@ f = open(files[0], 'r')
 
 console = Console()
 
-intro = '''
-# Smart Contract Hasher Finder
-'''
-
-console.print(Markdown(intro))
+console.print(Markdown('# Smart Contract Hasher Finder '))
+console.print(Markdown('## Analyzing ' + args.file[0]))
 
 ast = solcx.compile_files(files, output_values=['ast'], solc_version=args.solc_version[0])
 
