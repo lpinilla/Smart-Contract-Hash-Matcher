@@ -1,0 +1,38 @@
+{
+    "928e186fea8968d687543881cfe1cf954b9baff990cd5ff88383bad394d5eaa7" : {
+        "name": "@openzeppelin/access/Ownable",
+        "variation": false,
+        "comments": "Original"
+    },
+    "f0a05223fd9b8d55ed37231aae9a8704fa0daf1582119226ff71b2a6aa9b27dd" : {
+        "name": "@openzeppelin/security/Pausable",
+        "variation": false,
+        "comments": "Original"
+    },
+    "d4b19ac6483ea2dc9627a885d01d6a85bac0e3e9fda0c8dc261061469f89a464" : {
+        "name": "@openzeppelin/utils/Context",
+        "variation": false,
+        "comments": "Original"
+    },
+    "b426fd9e81662a1e9ff20380d4119807ac8f8a0409aa4a40b91cd66d8771b84c" : {
+        "name": "@openzeppelin/token/ERC20/extensions/ERC20Burnable",
+        "variation": false,
+        "comments": "Original"
+    },
+    "6f121ffdf67e099229c561d7a55d0a72491e5051defc7de62b6c05a40259d01d": {
+        "name": "@openzeppelin/token/ERC20/extensions/IERC20Metadata",
+        "variation": false,
+        "comments": "Original"
+    },
+    "9e46130407dbeab48c601a830fd1792887ef132db58f46c9c16dedfed457aefd": {
+        "name": "@openzeppelin/token/ERC20/IERC20",
+        "variation": false,
+        "comments": "Original"
+    },
+    "c42cf3d9cd5d9fd2f67296f5a414aad0ff5fdb3eafb41802e596162633d9ab69" : {
+        "name": "@openzeppelin/token/ERC20/ERC20",
+        "variation": false,
+        "comments": "Original"
+
+    }
+}
