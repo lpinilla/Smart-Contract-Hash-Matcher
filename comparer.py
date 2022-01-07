@@ -104,13 +104,13 @@ table.add_column('Comments')
 
 hits = 0
 for h in hashes:
-    if hashes[h] in db:
+    aux_hash = hashes[h]
+    if aux_hash in db:
         hits += 1
-        aux_hash = hashes[h]
         found = db[aux_hash]
         table.add_row(h, aux_hash[0:4] + '...' + aux_hash[-4:], '[green]:heavy_check_mark:', found['name'], str(found['variation']), found['comments'])
     else:
-        table.add_row(h, aux_hash[0:4] + '...' + aux_hash[-4:], '[red]:heavy_multiplication_x:')
+        table.add_row(h, aux_hash[0:4] + '...' + aux_hash[-4:], '[red]:heavy_multiplication_x:', '-', '-', '-')
 
 console.print(table)
 console.print(str(hits) + '/' + str(len(hashes)) + ' contracts found')
