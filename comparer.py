@@ -8,8 +8,9 @@ from rich.markdown import Markdown
 from rich.table import Table
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--file', type=str, nargs=1)
-parser.add_argument('--solc-version', type=str, nargs=1)
+parser.add_argument('-f', '--file', type=str, nargs=1, help='Provide the file to analyze')
+parser.add_argument('-v', '--solc-version', type=str, nargs=1, help='Select solidity compiler version to use')
+parser.add_argument('-d', '--database', type=str, nargs='?', help='Select hash database')
 
 args = parser.parse_args()
 if  args.file == None:
@@ -25,7 +26,7 @@ f = open(files[0], 'r')
 console = Console()
 
 intro = '''
-# Lauti's Contract Hasher Finder
+# Smart Contract Hasher Finder
 '''
 
 console.print(Markdown(intro))
@@ -53,7 +54,6 @@ def calculate_hash(code):
     return m.hexdigest()
 
 console.print(Markdown('## Found %d contracts' % len(contracts_location)))
-print('\n')
 
 print(', '.join([x['name'] for x in contracts_location]))
 
@@ -73,16 +73,19 @@ f.close()
 #calculate hashes
 
 console.print(Markdown('## Printing contract hashes'))
-print('\n')
 
 hashes = {c['name']:calculate_hash(c['source']) for i,c in enumerate(codes)}
 
 for h in hashes:
-    print(h + ':', hashes[h])
+    console.print(h + ':', hashes[h])
 
 #compare hashes
+if args.database == None:
+    db_file = 'hashes.json'
+else:
+    db_file = args.db
 
-with open('solidity_repos/hashes.json', 'r') as f:
+with open(db_file, 'r') as f:
     db = json.loads(f.read())
 
 hash_md = '''
@@ -110,5 +113,4 @@ for h in hashes:
         table.add_row(h, aux_hash[0:4] + '...' + aux_hash[-4:], '[red]:heavy_multiplication_x:')
 
 console.print(table)
-
 console.print(str(hits) + '/' + str(len(hashes)) + ' contracts found')
