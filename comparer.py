@@ -9,10 +9,14 @@ from rich.table import Table
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--file', type=str, nargs=1)
+parser.add_argument('--solc-version', type=str, nargs=1)
 
 args = parser.parse_args()
 if  args.file == None:
     print('No file in argument --file')
+    exit(1)
+if args.solc_version == None:
+    print('No solc version')
     exit(1)
 files = args.file
 
@@ -26,7 +30,7 @@ intro = '''
 
 console.print(Markdown(intro))
 
-ast = solcx.compile_files(files, output_values=['ast'], solc_version='0.8.9')
+ast = solcx.compile_files(files, output_values=['ast'], solc_version=args.solc_version[0])
 
 nodes = ast[list(ast.keys())[0]]['ast']['nodes']
 
