@@ -83,7 +83,7 @@ for h in hashes:
 if args.database == None:
     db_file = 'hashes.json'
 else:
-    db_file = args.db
+    db_file = args.database
 
 with open(db_file, 'r') as f:
     db = json.loads(f.read())
