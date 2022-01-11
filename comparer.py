@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file', type=str, nargs=1, help='Provide the file to analyze')
 parser.add_argument('-v', '--solc-version', type=str, nargs=1, help='Select solidity compiler version to use')
 parser.add_argument('-d', '--database', type=str, nargs='?', help='Select hash database')
+parser.add_argument('-w', '--whitelist-hashes', type=str, nargs=1, help='Comma separated whitelist contract hashes')
 
 args = parser.parse_args()
 if  args.file == None:
@@ -84,6 +85,18 @@ else:
 
 with open(db_file, 'r') as f:
     db = json.loads(f.read())
+
+#checking whitelists
+#command line argument
+if args.whitelist_hashes:
+    whitelist_obj = {
+        'name': 'User-provided whitelist',
+        'variation': '-',
+        'comments': 'Command line whitelist argument'
+    }
+    partial = [{h:whitelist_obj} for h in args.whitelist_hashes[0].split(',')]
+    for p in partial:
+        db.update(p)
 
 hash_md = '''
 # Comparing Hashes
