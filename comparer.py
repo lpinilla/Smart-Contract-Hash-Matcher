@@ -30,7 +30,10 @@ def extract_solidity_version(file):
     match = re.search('pragma solidity \^?[0-9. ]*;', f)
     pragma = f[match.start():match.end()]
     unlocked = '^' in pragma
-    return semantic_version.Version(pragma[-6:-1]), unlocked
+    if unlocked:
+        return semantic_version.Version(pragma[-6:-1]), unlocked
+    return semantic_version.Version(pragma[-7:-1]), unlocked
+
 
 def setup_solidity_version(version):
     #install if not found
@@ -149,7 +152,6 @@ def main():
     console = Console()
     console.print(Markdown('# Smart Contract Hasher Finder'))
     files = args.files[0].split(',')
-    print(files)
     for file in files:
         f = open(file, 'r')
         version, ast = compile_file(file, f, console)
