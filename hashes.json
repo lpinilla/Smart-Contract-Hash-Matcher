@@ -34,5 +34,85 @@
         "variation": false,
         "comments": "Original"
 
+    },
+    "9bdf99ce83ca6981a0aec6b1e5f0c188242387bea20de1e5b076e2b314b25834" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Address",
+        "variation": false,
+        "comments": "Original"
+    },
+    "09981f7443d2cc39cca32e5b41065c7963965733f01a8ba4c79fe319ca80ff32" : {
+        "name": "@openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20",
+        "variation": false,
+        "comments": "Original"
+    },
+    "0706d84e11827dd8f09fbe0f6ade74cb539ceb945311d986f192ec672962c132" : {
+        "name": "@openzeppelin-contracts/contracts/utils/math/SafeMath",
+        "variation": false,
+        "comments": "Original"
+    },
+    "cde9c2f4572d1a7b0e4038a7cc5382b3c62a9f76a790dfc40ad2eed7dc1d68ca" : {
+        "name": "@openzeppelin-contracts/contracts/security/ReentrancyGuard",
+        "variation": false,
+        "comments": "Original"
+    },
+    "c5ebbd113d8984edcb7f3268f111fb2f6adfaac9daa3c5dde40500ebb39a454e" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Address.sol",
+        "variation": true,
+        "comments": "Comment `isContract` to protect against flash loan attacks removed"
+    },
+    "659c441503bc24bc223501b641f87025b5a240b939fd0e9eafdd7cfec30c9749" : {
+        "name": "DSMath",
+        "variation": false,
+        "comments": "Original"
+    },
+    "6fc7b08a8e2ae92ef34d3c7799c14db30c07eb5e28680801fe7fbaae8040cc87" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Address.sol",
+        "variation": false,
+        "comments": "Original Release Version 4.1"
+    },
+    "8418c94b833039dca8bd4f603c385d0cf019c289eb4ac02b2664157a28abc38d" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Context.sol",
+        "variation": false,
+        "comments": "Original Release Version 4.1"
+    },
+    "61291a735c6312f6cfbc60cca15d24aba684cde2ec9788b20cfbb1de6fbe8935" : {
+        "name": "@openzeppelin-contracts/contracts/access/Ownable.sol",
+        "variation": false,
+        "comments": "Original Release Version 4.1"
+    },
+    "3e839e565314b677218f073ebd36d5aacc7615c13e3c6eaaab86a88d5b23c9f4" : {
+        "name": "@openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "variation": false,
+        "comments": "Original Release Version 4.1"
+    },
+    "be5211d20182e25c05893c7149c72e9afb2a496f322c66bfbf1c72fc5d522d52" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Context.sol",
+        "variation": false,
+        "comments": "Original Release Version 3.4"
+    },
+    "6353b9541d40ef3ac07d41228114cd5e6d78cdd497f2020d8464afdce456a0e1" : {
+        "name": "@openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "variation": false,
+        "comments": "Original Release Version 3.3"
+    },
+    "4d472cd3257c049de1ddc30f7fe56ffb875b3ca9bfbdf818671fbeb59d1f06c0" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Address.sol",
+        "variation": false,
+        "comments": "Original Release Version 3.2"
+    },
+    "46651f3e2f722cc4264249d145fa72652ef8998d8fd04d88c244230f77fecab6" : {
+        "name": "@openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+        "variation": false,
+        "comments": "Original Release Version 3.1"
+    },
+    "1712e91cc440d8e69daa9b353a83216ebf16bb78ee06de62586d88952e324dfb" : {
+        "name": "@openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "variation": true,
+        "comments": "Stripped from all comments"
+    },
+    "66814478c7b1daddde1a0409dc0c1657882deba3ea30ee89696d83b3103cce84" : {
+        "name": "@openzeppelin-contracts/contracts/util/Context.sol",
+        "variation": true,
+        "comments": "Only _msgSender function"
     }
 }
