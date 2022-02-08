@@ -113,6 +113,46 @@
     "66814478c7b1daddde1a0409dc0c1657882deba3ea30ee89696d83b3103cce84" : {
         "name": "@openzeppelin-contracts/contracts/util/Context.sol",
         "variation": true,
-        "comments": "Only _msgSender function"
+        "comments": "Only _msgSender() function"
+    },
+    "6f11896937c68664b683bf01ac8a3af00b72e980181384178e3639afc39d4ea8" : {
+        "name": "@openzeppelin-contracts/contracts/util/Address.sol",
+        "variation": true,
+        "comments": "Version 3.2 solc 0.7 with stripped comments explaining the functions"
+    },
+    "9bf222d46ecc450cdfc709de48d1fa4e62e25f5ec0cb4fe4a947f746360fa52d" : {
+        "name": "@openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+        "variation": true,
+        "comments": "Version 4 with stripped comments explaining the functions"
+    },
+    "bb997117474abdf447f883e42c6e3fe6ded71ffa26152113a8cf3c165a6cd784" : {
+        "name": "@openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "variation": true,
+        "comments": "Version 4 with stripped comments and no new lines except for events"
+    },
+    "9403cb817652e03b88eadf99bd6bb0e331beaa2a2edba29a09c336da622d37ad" : {
+        "name": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "variation": false,
+        "comments": "Original"
+    },
+    "b902f2383383ef5f0aaa2efeef3d7e6a4b7a7015b153bb730c8f0a35e08fdeb8" : {
+        "name": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "variation": false,
+        "comments": "Original"
+    },
+    "5e8400fe9df52a5d65b22d730c97ddd30676dee7cd3f3074fe4be53d762a6edf" : {
+        "name": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+        "variation": false,
+        "comments": "Original"
+    },
+    "e60072d179d983b47bf6aa0410da396ce63b525c3171e90b0f2af5e3e7f356b5" : {
+        "name": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+        "variation": true,
+        "comments": "Added new lines between functions"
+    },
+    "da21c4a172144d78eda82b180a9d05278db6e63443268244d9b4a405c2d68bd3": {
+        "name": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
+        "variation": false,
+        "comments": "Original"
     }
 }
