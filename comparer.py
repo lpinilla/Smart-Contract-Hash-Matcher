@@ -5,6 +5,7 @@ import json
 import re
 import semantic_version
 import sys
+import os
 
 from rich.console import Console
 from rich.markdown import Markdown
@@ -151,8 +152,12 @@ def main():
     args = check_arguments()
     console = Console()
     console.print(Markdown('# Smart Contract Hasher Finder'))
-    files = args.files[0].split(',')
+    if len(args.files) == 1 :
+        files = args.files[0].split(',')
+    else:
+        files = args.files
     for file in files:
+        if os.path.isdir(file): continue
         f = open(file, 'r')
         version, ast = compile_file(file, f, console)
         contract_locations = parse_contract(ast, version, console)
