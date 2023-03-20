@@ -2,58 +2,58 @@
     "928e186fea8968d687543881cfe1cf954b9baff990cd5ff88383bad394d5eaa7" : {
         "name": "@openzeppelin/access/Ownable",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "f0a05223fd9b8d55ed37231aae9a8704fa0daf1582119226ff71b2a6aa9b27dd" : {
         "name": "@openzeppelin/security/Pausable",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "d4b19ac6483ea2dc9627a885d01d6a85bac0e3e9fda0c8dc261061469f89a464" : {
         "name": "@openzeppelin/utils/Context",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "b426fd9e81662a1e9ff20380d4119807ac8f8a0409aa4a40b91cd66d8771b84c" : {
         "name": "@openzeppelin/token/ERC20/extensions/ERC20Burnable",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "6f121ffdf67e099229c561d7a55d0a72491e5051defc7de62b6c05a40259d01d": {
         "name": "@openzeppelin/token/ERC20/extensions/IERC20Metadata",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "9e46130407dbeab48c601a830fd1792887ef132db58f46c9c16dedfed457aefd": {
         "name": "@openzeppelin/token/ERC20/IERC20",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "c42cf3d9cd5d9fd2f67296f5a414aad0ff5fdb3eafb41802e596162633d9ab69" : {
         "name": "@openzeppelin/token/ERC20/ERC20",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
 
     },
     "9bdf99ce83ca6981a0aec6b1e5f0c188242387bea20de1e5b076e2b314b25834" : {
         "name": "@openzeppelin-contracts/contracts/utils/Address",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "09981f7443d2cc39cca32e5b41065c7963965733f01a8ba4c79fe319ca80ff32" : {
         "name": "@openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "0706d84e11827dd8f09fbe0f6ade74cb539ceb945311d986f192ec672962c132" : {
         "name": "@openzeppelin-contracts/contracts/utils/math/SafeMath",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "cde9c2f4572d1a7b0e4038a7cc5382b3c62a9f76a790dfc40ad2eed7dc1d68ca" : {
         "name": "@openzeppelin-contracts/contracts/security/ReentrancyGuard",
         "variation": false,
-        "comments": "Original"
+        "comments": "Original Release Version 4.4"
     },
     "c5ebbd113d8984edcb7f3268f111fb2f6adfaac9daa3c5dde40500ebb39a454e" : {
         "name": "@openzeppelin-contracts/contracts/utils/Address.sol",
@@ -154,5 +154,35 @@
         "name": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
         "variation": false,
         "comments": "Original"
+    },
+    "adfdade77c255ea0596d58b4259222a146950b49811d8933489ad8b02b299b1d": {
+        "name": "@bsc-genesis-contract/contracts/interface/IBEP20.sol",
+        "variation": false,
+        "comments": "Original"
+    },
+    "c22a59ce58e95a34b74b0895a834d94f4a8db26fd14c347fa8fd736aed6be96f" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Address.sol",
+        "variation": true,
+        "comments": "V4 with different identation for function signatures"
+    },
+    "90d196b088a2ae3ebffcd6692869566429a8a004525d1d44a53728cd765f7f37" : {
+        "name": "@openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "variation": true,
+        "comments": "Known version (commit 56de324afea13c4649b00ca8c3a3e3535d532bd4) without total supply comment"
+    },
+    "c629776b42ad58f7ce7de675832b9bcaf17f388707fde32a81d553b268dfb148" : {
+        "name": "@openzeppelin-contracts/contracts/utils/Context.sol",
+        "variation": true,
+        "comments": "Known version (commit 5609cd4c74dda60b01d0eacc7989428be6496781) but _msgSender returns a payable address"
+    },
+    "d620d8fedf77e539213984ba1308746ac02249c86f7a77d6709243184c42f097" : {
+        "name": "@openzeppelin-contracts/contracts/access/Ownable.sol",
+        "variation": true,
+        "comments": "Known version (commit 974c534210ab3347bdaa45f0f07cfe298a8a6866) but with differences in spaces / identation. Contract is not abstract"
+    },
+    "a77008591f807ac977086b01b9b3a3d43dfa74cc92a1ab964ad4ba0c22790149" : {
+        "name": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "variation": false,
+        "comments": "Official v1.0.1"
     }
 }
